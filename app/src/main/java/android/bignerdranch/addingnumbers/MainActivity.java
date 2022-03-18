@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         number1 = (EditText) findViewById(R.id.edTextNumber1);
         number2 = (EditText) findViewById(R.id.edTextNumber2);
-        add = (Button) findViewById(R.id.btnAdd);
+        //reference a button
+        add = (Button) findViewById(R.id.addButton);
         answer = (TextView) findViewById(R.id.Answer);
 
         add.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 int num1 = Integer.parseInt(number1.getText().toString());
                 int num2 = Integer.parseInt(number2.getText().toString());
                 int sum = num1 + num2;
-                answer.setText("The Answer is " + String.valueOf(sum));
+                answer.setText("The Answer is " + sum);
 
             }
         });
